@@ -1,0 +1,52 @@
+/* Cú pháp CSS cơ bản */
+/* Ví dụ thực tế */
+/* Yêu cầu 4: CSS cho body */
+body {
+    font-family: Arial, sans-serif; /* Đặt font chữ là Arial */
+    background-color: #f0f8ff;      /* Màu nền tùy chọn (ở đây dùng màu xanh nhạt AliceBlue) */
+    padding: 20px;                  /* Khoảng cách lề bên trong là 20px */
+}
+h1 {
+    color: #028090;                 /* Đặt màu chữ khác màu đen mặc định */
+    text-align: center;             /* Căn giữa nội dung tiêu đề */
+}
+p {
+    line-height: 1.6;               /* Khoảng cách giữa các dòng là 1.6 */
+    max-width: 700px;               /* Giới hạn chiều rộng tối đa của đoạn văn là 700px */
+}
+/* Yêu cầu 8: CSS cho h2 */
+h2 {
+    color: #e76f51; /* Đặt màu khác với h1 (ví dụ: màu cam đất) */
+    border-bottom: 2px solid #cccccc; /* Đường kẻ ngang dưới tiêu đề dày 2px, nét liền, màu xám */
+    padding-bottom: 5px; /* Tạo một chút khoảng cách giữa chữ và đường kẻ cho đẹp mắt */
+    margin-top: 30px; /* Thêm khoảng cách phía trên để các phần tách bạch hơn */
+}
+/* Yêu cầu 9: Trạng thái bình thường của thẻ a (liên kết) */
+a {
+    color: #2a9d8f; /* Màu liên kết mặc định */
+    text-decoration: none; /* Bỏ đường gạch chân mặc định của trình duyệt */
+}
+/* Yêu cầu 9 (Nâng cao): Thuộc tính hover cho thẻ a */
+a:hover {
+    color: #e9c46a; /* Đổi sang màu vàng khi rê chuột vào */
+    text-decoration: underline; /* Hiện lại gạch chân khi rê chuột */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
