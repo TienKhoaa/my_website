@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Tiến Khoa – Liên hệ & Hợp tác công việc</title>
+    <meta name="description" content="Điền biểu mẫu để liên hệ với Nguyễn Tiến Khoa. Sẵn sàng trao đổi về các cơ hội hợp tác, thực tập Data Analyst và chia sẻ kiến thức CNTT.">
+    <meta property="og:title" content="Nguyễn Tiến Khoa – Liên hệ">
+    <meta property="og:description" content="Kết nối và trao đổi công việc với Nguyễn Tiến Khoa.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Liên hệ với tôi</h1>
+        <nav>
+            <a href="index.html">Trang chủ</a> |
+            <a href="about.html">Giới thiệu</a> |
+            <a href="contact.html">Liên hệ</a> |
+            <a href="https://github.com/nguyentienkhoa" target="_blank" rel="noopener">GitHub của tôi</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="form-lien-he">
+            <h2>Để lại lời nhắn</h2>
+            
+            <form action="#" method="POST">
+                
+                <fieldset>
+                    <legend>Thông tin cá nhân</legend>
+                    
+                    <label for="fullname">Họ và tên: *</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Nhập họ tên đầy đủ" required minlength="2" maxlength="100"><br><br>
+
+                    <label for="dob">Ngày sinh:</label>
+                    <input type="date" id="dob" name="dob"><br><br>
+
+                    <label for="university">Trường Đại học:</label>
+                    <input type="text" id="university" name="university" list="uni-list" placeholder="Chọn hoặc nhập tên trường...">
+                    <datalist id="uni-list">
+                        <option value="Đại học Gia Định (GDU)">
+                        <option value="Đại học Khoa học Tự nhiên (HCMUS)">
+                        <option value="Đại học Bách Khoa (HCMUT)">
+                        <option value="Đại học Công nghệ Thông tin (UIT)">
+                    </datalist><br><br>
+
+                    <label for="email">Email: *</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="09xx xxx xxx" pattern="[0-9]{10,11}" title="Nhập 10-11 chữ số"><br><br>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Nội dung liên hệ</legend>
+
+                    <label for="subject">Chủ đề:</label>
+                    <select id="subject" name="subject">
+                        <option value="">-- Chọn chủ đề --</option>
+                        <option value="support">Hỗ trợ kỹ thuật</option>
+                        <option value="study">Học tập / Trao đổi</option>
+                        <option value="other">Khác</option>
+                    </select><br><br>
+
+                    <label>Ưu tiên liên hệ qua:</label>
+                    <fieldset>
+                        <legend>Kênh liên hệ</legend>
+                        <input type="radio" id="via-email" name="contact-via" value="email" checked>
+                        <label for="via-email">Email</label>
+                        
+                        <input type="radio" id="via-phone" name="contact-via" value="phone">
+                        <label for="via-phone">Điện thoại</label>
+                        
+                        <input type="radio" id="via-zalo" name="contact-via" value="zalo">
+                        <label for="via-zalo">Zalo</label>
+                    </fieldset><br>
+
+                    <label for="message">Tin nhắn: *</label><br>
+                    <textarea id="message" name="message" rows="5" placeholder="Nhập nội dung tin nhắn..." required minlength="10" maxlength="500"></textarea><br><br>
+
+                    <label>
+                        <input type="checkbox" name="agree" required>
+                        Tôi đồng ý với <a href="#">điều khoản sử dụng</a> *
+                    </label>
+                </fieldset>
+
+                <br>
+                <button type="submit">Gửi tin nhắn</button>
+                <button type="reset">Xoá và nhập lại</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Email: <a href="mailto:nguyentienkhoa@gmail.com">nguyentienkhoa@gmail.com</a><br>
+            Điện thoại: <a href="tel:+84901234567">0999 999 999</a>
+        </address>
+        <p>&copy; 2026 Nguyễn Tiến Khoa.</p>
+    </footer>
+
+</body>
+</html>

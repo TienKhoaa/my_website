@@ -1,33 +1,65 @@
-<!DOCTYPE html>                 <!-- Khai báo đây là HTML5 -->
-<html lang="vi">                <!-- Thẻ gốc, chứa toàn bộ trang -->
-<head>                          <!-- Phần đầu: thông tin về trang -->
-    <meta charset="UTF-8">      <!-- Cho phép hiển thị tiếng Việt -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Tiến Khoa – Trang của tôi</title>    <!-- Tiêu đề trên tab trình duyệt -->
-    <link rel="stylesheet"href="css/style.css">
+    <title>Nguyễn Tiến Khoa – Portfolio & Trang chủ cá nhân</title>
+    
+    <meta name="description" content="Chào mừng đến với trang chủ của Nguyễn Tiến Khoa, sinh viên CNTT đam mê phân tích dữ liệu và hệ thống Big Data. Khám phá các kỹ năng và mục tiêu của tôi.">
+    
+    <meta property="og:title" content="Nguyễn Tiến Khoa – Trang chủ cá nhân">
+    <meta property="og:description" content="Portfolio cá nhân của sinh viên CNTT Nguyễn Tiến Khoa.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>                          <!-- Phần thân: nội dung hiển thị -->
-    <h1>Nguyễn Tiến Khoa</h1>
+<body>
 
-    <h2>Thông tin cá nhân</h2>
-    <p>Họ và tên: <strong>Nguyễn Tiến Khoa</strong></p>
-    <p>Quê quán: An Giang</p>
-    <p>Ngành học: Công Nghệ Thông Tin</p>
-    <p>Năm học: 2023 - 2026</p>
-    <p>Bạn có thể ghé thăm <a href="https://github.com/">trang GitHub của tôi</a> để xem thêm các dự án khác.</p>
+    <header>
+        <h1>Nguyễn Tiến Khoa</h1>
+        <p>Sinh viên Công Nghệ Thông Tin</p>
+        <nav>
+            <a href="index.html">Trang chủ</a> |
+            <a href="about.html">Giới thiệu</a> |
+            <a href="contact.html">Liên hệ</a> |
+            <a href="https://github.com/TienKhoaa/my_website" target="_blank" rel="noopener">GitHub của tôi</a>
+        </nav>
+    </header>
 
-    <h2>Sở thích</h2>
-    <ul>
-        <li>Ca hát</li>
-        <li>Thể thao</li>
-        <li>Ngoại ngữ</li>
-    </ul>
+    <main>
+        <section id="thong-tin">
+            <h2>Thông tin cá nhân</h2>
+            <p>Họ và tên: <strong>Nguyễn Tiến Khoa</strong></p>
+            <p>Quê quán: An Giang</p>
+            <p>Ngành học: Công Nghệ Thông Tin</p>
+            <p>Năm học: 2023 - 2026</p>
+        </section>
 
-    <h2>Mục tiêu học kỳ này</h2>
-    <ol>
-        <li>Đạt điểm cao trong các môn chuyên ngành và nắm vững kiến thức về cơ sở dữ liệu.</li>
-        <li>Nâng cao kỹ năng phân tích dữ liệu thực tế (như làm việc với SQL và Apache Superset).</li>
-        <li>Cải thiện và trau dồi thêm kỹ năng giao tiếp tiếng Trung.</li>
-    </ol>
+        <section id="so-thich-muc-tieu">
+            <h2>Sở thích</h2>
+            <ul>
+                <li>Ca hát</li>
+                <li>Thể thao</li>
+                <li>Ngoại ngữ</li>
+            </ul>
+
+            <h2>Mục tiêu học kỳ này</h2>
+            <ol>
+                <li>Đạt điểm cao trong các môn chuyên ngành và nắm vững kiến thức về cơ sở dữ liệu.</li>
+                <li>Nâng cao kỹ năng phân tích dữ liệu thực tế (như làm việc với SQL và Apache Superset).</li>
+                <li>Cải thiện và trau dồi thêm kỹ năng giao tiếp tiếng Trung.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Email: <a href="mailto:nguyentienkhoa@gmail.com">nguyentienkhoa@gmail.com</a><br>
+            Điện thoại: <a href="tel:+84901234567">0999 999 999</a>
+        </address>
+        <p>&copy; 2026 Nguyễn Tiến Khoa.</p>
+    </footer>
+
 </body>
 </html>
+

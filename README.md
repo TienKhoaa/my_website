@@ -1,7 +1,8 @@
-# Trang web giới thiệu cá nhân
+# Portfolio Cá Nhân - Lập Trình Web (Lab 2)
 
-Đây là bài tập thực hành buổi 1 môn Lập trình Web. Dự án này là một trang web tĩnh cơ bản sử dụng HTML và CSS để hiển thị thông tin cá nhân.
+Dự án website cá nhân 3 trang (Trang chủ, Giới thiệu, Liên hệ) của Nguyễn Tiến Khoa. 
 
-## Tác giả
-* **Họ và tên:** Nguyễn Tiến Khoa
-* **Ngành học:** Công Nghệ Thông Tin
+**Tính năng nổi bật:**
+* Sử dụng cấu trúc Semantic HTML5 chuẩn (`header`, `nav`, `main`, `section`, `footer`).
+* Tích hợp Form liên hệ với Validation HTML5 (`required`, `pattern`, `minlength`).
+* Tối ưu hóa SEO cơ bản (Meta title, description, Open Graph tags).
