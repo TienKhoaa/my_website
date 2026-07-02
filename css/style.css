@@ -1,52 +1,180 @@
-/* Cú pháp CSS cơ bản */
-/* Ví dụ thực tế */
-/* Yêu cầu 4: CSS cho body */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif; /* Đặt font chữ là Arial */
-    background-color: #f0f8ff;      /* Màu nền tùy chọn (ở đây dùng màu xanh nhạt AliceBlue) */
-    padding: 20px;                  /* Khoảng cách lề bên trong là 20px */
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  background-color: #f4f7fb;
+  color: #1e293b;
+  line-height: 1.6;
 }
-h1 {
-    color: #028090;                 /* Đặt màu chữ khác màu đen mặc định */
-    text-align: center;             /* Căn giữa nội dung tiêu đề */
-}
-p {
-    line-height: 1.6;               /* Khoảng cách giữa các dòng là 1.6 */
-    max-width: 700px;               /* Giới hạn chiều rộng tối đa của đoạn văn là 700px */
-}
-/* Yêu cầu 8: CSS cho h2 */
-h2 {
-    color: #e76f51; /* Đặt màu khác với h1 (ví dụ: màu cam đất) */
-    border-bottom: 2px solid #cccccc; /* Đường kẻ ngang dưới tiêu đề dày 2px, nét liền, màu xám */
-    padding-bottom: 5px; /* Tạo một chút khoảng cách giữa chữ và đường kẻ cho đẹp mắt */
-    margin-top: 30px; /* Thêm khoảng cách phía trên để các phần tách bạch hơn */
-}
-/* Yêu cầu 9: Trạng thái bình thường của thẻ a (liên kết) */
+
 a {
-    color: #2a9d8f; /* Màu liên kết mặc định */
-    text-decoration: none; /* Bỏ đường gạch chân mặc định của trình duyệt */
+  color: #1d6fa4;
+  text-decoration: none;
 }
-/* Yêu cầu 9 (Nâng cao): Thuộc tính hover cho thẻ a */
 a:hover {
-    color: #e9c46a; /* Đổi sang màu vàng khi rê chuột vào */
-    text-decoration: underline; /* Hiện lại gạch chân khi rê chuột */
+  color: #0d9488;
+  text-decoration: underline;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
 
+.btn-primary {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
 
+.btn-primary {
+  background: white;
+  color: #d30000;
+}
+.btn-primary:hover {
+  background: #e2e8f0;
+}
 
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin-bottom: 24px;
+  flex: 1;
+  min-width: 250px;
+}
 
+.skill-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  border-left: 4px solid #1d6fa4;
+  padding: 16px 24px;
+}
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: #d30000;
+}
+.navbar .logo {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.navbar .nav-links a {
+  color: #93c5fd;
+  margin-left: 24px;
+}
+.navbar .nav-links a:hover {
+  color: white;
+  text-decoration: none;
+}
 
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 300px;
+  background: #1d6fa4;
+  color: white;
+  text-align: center;
+  padding: 48px 24px;
+  gap: 16px;
+}
 
+.page-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
 
+.sidebar {
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 24px;
+  align-self: start;
+}
+.sidebar h3 {
+  font-size: 1rem;
+  color: #d30000;
+  margin-bottom: 12px;
+}
+.sidebar ul {
+  list-style: none;
+}
+.sidebar ul li {
+  margin-bottom: 8px;
+}
+.sidebar ul a {
+  color: #1d6fa4;
+}
+.sidebar ul a:hover {
+  text-decoration: underline;
+}
 
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 32px;
+}
 
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
 
+footer {
+  background-color: #1e293b;
+  color: #94a3b8;
+  padding: 24px 32px;
+  margin-top: 48px;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
+.sidebar {
+  display: none;
+}
 
+@media (min-width: 768px) {
+  .page-layout {
+    grid-template-columns: 220px 1fr;
+  }
+  .sidebar {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  .page-layout {
+    grid-template-columns: 240px 1fr;
+  }
+}
 
-
-
-
-
+/*# sourceMappingURL=style.css.map */

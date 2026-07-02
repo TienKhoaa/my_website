@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+// Mặc định Mobile-first (ẩn sidebar)
+.sidebar { display: none; }
+
+// Tablet (>= 768px)
+@media (min-width: 768px) {
+    .page-layout {
+        grid-template-columns: 220px 1fr;
+    }
+    .sidebar { display: block; }
+}
+
+// Desktop (>= 1024px)
+@media (min-width: 1024px) {
+    .page-layout {
+        grid-template-columns: 240px 1fr;
+    }
+}
